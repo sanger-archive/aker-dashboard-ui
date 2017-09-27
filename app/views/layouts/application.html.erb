@@ -21,6 +21,7 @@
           <a class="navbar-brand" href="#">Aker</a>
         </div>
           <div class="collapse navbar-collapse" id="navBar">
+          <%= render 'navlinks' %>
           <ul class="nav navbar-nav navbar-right">
             <li>
               <% if jwt_provided? %>
@@ -35,14 +36,11 @@
     </nav>
 
     <div class="container" id ="content">
-      <h1>Stamps UI</h1>
-
       <div class="row">
         <div class="col-md-12">
           <%= yield %>
         </div>
       </div>
-
     </div>
   </body>
 </html>
