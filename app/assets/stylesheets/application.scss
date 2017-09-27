@@ -1,0 +1,21 @@
+@import "bootstrap-sprockets";
+@import "paper.min";
+
+body {
+  background-color: #e0ebeb;
+}
+
+.container#content {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
