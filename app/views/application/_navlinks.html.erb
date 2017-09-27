@@ -1,17 +1,17 @@
 <ul class="nav navbar-nav">
   <li>
-    <%= link_to 'Submissions' %>
+    <%= link_to 'Submissions', Rails.application.config.submission %>
   </li>
   <li>
-    <%= link_to 'Sets' %>
+    <%= link_to 'Sets', Rails.application.config.set_shaper %>
   </li>
   <li>
-    <%= link_to 'Permissions' %>
+    <%= link_to 'Permissions', Rails.application.config.stamps_ui %>
   </li>
   <li>
-    <%= link_to 'Projects' %>
+    <%= link_to 'Projects', Rails.application.config.study_management %>
   </li>
   <li>
-    <%= link_to 'Work Orders' %>
+    <%= link_to 'Work Orders', Rails.application.config.work_orders %>
   </li>
 </ul>
