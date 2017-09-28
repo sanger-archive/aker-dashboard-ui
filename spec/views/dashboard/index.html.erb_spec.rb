@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "dashboard/index.html.erb", type: :view do
-  describe "dashboard/index.html.erb" do
+  describe "#index" do
     it "renders application summary partials" do
       render
       expect(response).to render_template :index
