@@ -1,5 +1,13 @@
 class ApplicationController < ActionController::Base
+
   include JWTCredentials
 
-  helper_method :jwt_provided?
+  before_action :user_signed_in?
+  helper_method :jwt_provided?, :current_user
+
+  private
+
+  def user_signed_in?
+    redirect_to Rails.configuration.login_url unless current_user
+  end
 end

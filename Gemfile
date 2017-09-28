@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 # For those styles
 gem 'bootstrap-sass'
 
-gem 'aker_credentials_gem', github: 'sanger/aker-credentials', branch: 'noguest'
+gem 'aker_credentials_gem', github: 'sanger/aker-credentials'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
