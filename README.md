@@ -1,7 +1,7 @@
 # Aker Dashboard
 
 This application is a landing page to Aker.
-Users can be redirected to other Aker applications from links in the navbar.
+Users can get to other Aker applications from links in the navbar.
 
 # Setup
 

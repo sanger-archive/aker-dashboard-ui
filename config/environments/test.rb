@@ -43,9 +43,9 @@ Rails.application.configure do
   config.login_url = '#'
   config.logout_url = '#'
 
-  config.submission = '#submission'
-  config.set_shaper = '#set_shaper'
-  config.stamps_ui = '#stamps_ui'
-  config.study_management = '#study_management'
-  config.work_orders = '#work_orders'
+  config.submission_url = '#submission'
+  config.set_shaper_url = '#set_shaper'
+  config.stamps_ui_url = '#stamps_ui'
+  config.study_management_url = '#study_management'
+  config.work_orders_url = '#work_orders'
 end

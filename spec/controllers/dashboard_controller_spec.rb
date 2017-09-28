@@ -18,7 +18,7 @@ RSpec.describe DashboardController, type: :controller do
         allow_any_instance_of(DashboardController).to receive(:current_user).and_return(user)
       end
       it 'renders the summary of applications' do
-        get :index, params: {}
+        get :index
         expect(response).to render_template "dashboard/index"
       end
 

@@ -57,10 +57,10 @@ Rails.application.configure do
   config.login_url = '#'
   config.logout_url = '#'
 
-  config.submission = 'http://localhost:3100'
-  config.set_shaper = 'http://localhost:3002/search'
-  config.stamps_ui = 'http://localhost:7001'
-  config.study_management = 'http://localhost:3300'
-  config.work_orders = 'http://localhost:3200'
+  config.submission_url = 'http://localhost:3100'
+  config.set_shaper_url = 'http://localhost:3002/search'
+  config.stamps_ui_url = 'http://localhost:7001'
+  config.study_management_url = 'http://localhost:3300'
+  config.work_orders_url = 'http://localhost:3200'
 
 end
