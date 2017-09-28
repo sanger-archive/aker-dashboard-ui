@@ -1,24 +1,15 @@
-# README
+# Aker Dashboard
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a landing page to Aker.
+Users can be redirected to other Aker applications from links in the navbar.
 
-Things you may want to cover:
+#Setup
 
-* Ruby version
+## Dev environment
+To install gems, run:
+`bundle install`
+Configure ports to services in `development.rb`.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Testing
+To run all test for this project, execute:
+`bundle exec rake`
