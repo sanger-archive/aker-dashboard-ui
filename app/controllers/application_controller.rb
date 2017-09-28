@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   include JWTCredentials
 
   before_action :user_signed_in?
-  helper_method :jwt_provided?, :current_user
+  helper_method :current_user
 
   private
 
