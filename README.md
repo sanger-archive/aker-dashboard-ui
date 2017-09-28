@@ -3,7 +3,7 @@
 This application is a landing page to Aker.
 Users can be redirected to other Aker applications from links in the navbar.
 
-#Setup
+# Setup
 
 ## Dev environment
 To install gems, run:
