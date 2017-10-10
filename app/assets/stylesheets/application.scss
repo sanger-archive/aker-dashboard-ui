@@ -23,3 +23,26 @@ h2 {
 .navbar-text {
   color: #b2dbfb !important;
 }
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+}
+
+.service:hover {
+  cursor: pointer;
+  h5 {
+    text-decoration: underline;
+  }
+  text: bold;
+  /*border-color: lightgray;
+  border-style: line;
+  border-width: 1px;
+  border-style: dashed;*/
+  cursor: pointer;
+}
