@@ -51,13 +51,19 @@ Rails.application.configure do
 
   config.default_jwt_user = { email: ENV.fetch('USER', 'user')+'@sanger.ac.uk', groups: ['world'] }
 
-  config.login_url = '#'
-  config.logout_url = '#'
-
   config.submission_url = 'http://localhost:3100'
   config.set_shaper_url = 'http://localhost:3002/search'
   config.stamps_ui_url = 'http://localhost:7001'
   config.study_management_url = 'http://localhost:3300'
   config.work_orders_url = 'http://localhost:3200'
+
+  config.jwt_exp_time = 2 * 60
+  config.jwt_nbf_time = 1 * 60
+
+  config.jwt_secret_key = 'development'
+
+  config.auth_service_url = 'http://localhost:9010'
+  config.login_url = config.auth_service_url+'/login'
+  config.logout_url = config.auth_service_url+'/logout'
 
 end

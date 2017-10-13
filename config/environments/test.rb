@@ -40,12 +40,18 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  config.login_url = '#'
-  config.logout_url = '#'
-
   config.submission_url = '#submission'
   config.set_shaper_url = '#set_shaper'
   config.stamps_ui_url = '#stamps_ui'
   config.study_management_url = '#study_management'
   config.work_orders_url = '#work_orders'
+
+  config.jwt_exp_time = 2 * 60
+  config.jwt_nbf_time = 1 * 60
+
+  config.jwt_secret_key = 'test'
+
+  config.auth_service_url = 'http://auth'
+  config.login_url = config.auth_service_url+'/login'
+  config.logout_url = config.auth_service_url+'/logout'
 end
