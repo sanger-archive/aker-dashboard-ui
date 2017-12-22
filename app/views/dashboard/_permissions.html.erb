@@ -1,2 +1,13 @@
-<h5>Permissions</h5>
-<p>A service to create permissions. Permissions control who can use your samples in a work order.</p>
+<div class="panel panel-primary text-center">
+  <div class="panel-heading">
+    <h2 class="panel-title">Permissions</h2>
+  </div>
+  <div class="panel-body">
+    <p>A service to create permissions.
+      Permissions control who can use your samples in a work order.</p>
+    <%= link_to 'Stamps', "#{Rails.application.config.stamps_ui_url}/simple",
+          class: 'btn btn-sm btn-default', style: 'margin-right: 10px' %>
+    <%= link_to 'Deputies', "#{Rails.application.config.stamps_ui_url}/advanced",
+          class: 'btn btn-sm btn-default' %>
+  </div>
+</div>
