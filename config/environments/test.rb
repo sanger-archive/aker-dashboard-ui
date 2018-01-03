@@ -46,12 +46,9 @@ Rails.application.configure do
   config.study_management_url = '#study_management'
   config.work_orders_url = '#work_orders'
 
-  config.jwt_exp_time = 2 * 60
-  config.jwt_nbf_time = 1 * 60
-
   config.jwt_secret_key = 'test'
 
   config.auth_service_url = 'http://auth'
-  config.login_url = config.auth_service_url+'/login'
-  config.logout_url = config.auth_service_url+'/logout'
+  config.login_url = config.auth_service_url + '/login'
+  config.logout_url = config.auth_service_url + '/logout'
 end
