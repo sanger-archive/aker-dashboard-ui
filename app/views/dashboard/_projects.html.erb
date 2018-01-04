@@ -1,2 +1,12 @@
-<h5>Projects</h5>
-<p>A service to organise your projects. Projects are organised hierarchically under scientific programmes, and may have an associated budget.</p>
+<div class="panel panel-primary text-center">
+  <div class="panel-heading">
+    <h2 class="panel-title">Projects</h2>
+  </div>
+  <div class="panel-body">
+    <p>A service to organise your projects.
+      Projects are organised hierarchically under scientific programmes,
+      and may have an associated budget.</p>
+    <%= link_to 'View Projects', "#{Rails.application.config.study_management_url}",
+          class: 'btn btn-sm btn-default' %>
+  </div>
+</div>

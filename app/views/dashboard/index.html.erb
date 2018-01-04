@@ -1,21 +1,19 @@
 <div class="row">
-  <div class="col-sm-6 service">
-    <a href="<%= Rails.application.config.submission_url %>"><%= render "submission" %></a>
+  <div class="col-md-4 service">
+    <%= render "submission" %>
   </div>
-  <div class="col-sm-6 service">
-    <a href="<%= Rails.application.config.stamps_ui_url %>"><%= render "permissions" %></a>
+  <div class="col-md-4 service">
+    <%= render "work_orders" %>
   </div>
-</div>
-<div class="row">
-  <div class="col-sm-6 service">
-    <a href="<%= Rails.application.config.set_shaper_url %>"><%= render "sets" %></a>
-  </div>
-  <div class="col-sm-6 service">
-    <a href="<%= Rails.application.config.study_management_url %>"><%= render "projects" %></a>
+  <div class="col-md-4 service">
+    <%= render "sets" %>
   </div>
 </div>
 <div class="row">
-  <div class="col-sm-6 service">
-    <a href="<%= Rails.application.config.work_orders_url %>"><%= render "work_orders" %></a>
+  <div class="col-md-4 service">
+    <%= render "projects" %>
+  </div>
+  <div class="col-md-4 service">
+    <%= render "permissions" %>
   </div>
 </div>
