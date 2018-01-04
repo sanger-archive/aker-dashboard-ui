@@ -49,7 +49,7 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  config.default_jwt_user = { email: ENV.fetch('USER', 'user')+'@sanger.ac.uk', groups: ['world'] }
+  config.default_jwt_user = { email: ENV.fetch('USER', 'user') + '@sanger.ac.uk', groups: ['world'] }
 
   config.submission_url = 'http://localhost:3100'
   config.set_shaper_url = 'http://localhost:3002/search'
@@ -57,19 +57,16 @@ Rails.application.configure do
   config.study_management_url = 'http://localhost:3300'
   config.work_orders_url = 'http://localhost:3200'
 
-  config.jwt_exp_time = 2 * 60
-  config.jwt_nbf_time = 1 * 60
-
   config.jwt_secret_key = 'development'
 
   config.auth_service_url = 'http://localhost:9010'
-  config.login_url = config.auth_service_url+'/login'
-  config.logout_url = config.auth_service_url+'/logout'
+  config.login_url = config.auth_service_url + '/login'
+  config.logout_url = config.auth_service_url + '/logout'
 
-  config.urls = { submission: "",
-                  permissions: "",
-                  sets: "",
-                  projects: "",
-                  work_orders: "" }
+  config.urls = { submission: '',
+                  permissions: '',
+                  sets: '',
+                  projects: '',
+                  work_orders: '' }
 
 end

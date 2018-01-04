@@ -1,2 +1,12 @@
-<h5>Submission</h5>
-<p>A service to create samples with metadata in the Aker application. Samples may be created from a standard file or entered manually.</p>
+<div class="panel panel-primary text-center">
+  <div class="panel-heading">
+    <h2 class="panel-title">Submission</h2>
+  </div>
+  <div class="panel-body">
+    <p>A service to create samples with metadata in the Aker application. Samples may be created from a standard file or entered manually.</p>
+    <%= link_to 'View Submissions', "#{Rails.application.config.submission_url}",
+          class: 'btn btn-sm btn-default', style: 'margin-right: 10px' %>
+    <%= link_to 'Create', "#{Rails.application.config.submission_url}/material_submissions/new",
+          class: 'btn btn-sm btn-success' %>
+  </div>
+</div>
