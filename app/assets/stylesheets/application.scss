@@ -64,6 +64,11 @@ $development: #441f84;
   background-color: darken($development, 12.5%);
   font-weight: bold;
 }
+// Panel headers
+.development.panel-primary > .panel-heading {
+  background-color: $development;
+  border-color: $development;
+}
 
 
 // STAGING environment
@@ -82,6 +87,11 @@ $dev: #1f7a30;
 #current-page-dev {
   background-color: darken($dev, 12.5%);
   font-weight: bold;
+}
+// Panel headers
+.dev.panel-primary > .panel-heading {
+  background-color: $dev;
+  border-color: $dev;
 }
 
 
@@ -102,6 +112,11 @@ $uat: #2196F3;
   background-color: darken($uat, 12.5%);
   font-weight: bold;
 }
+// Panel headers
+.uat.panel-primary > .panel-heading {
+  background-color: $uat;
+  border-color: $uat;
+}
 
 
 // PRODUCTION environment
@@ -120,4 +135,9 @@ $production: #2196F3;
 #current-page-production {
   background-color: darken($production, 12.5%);
   font-weight: bold;
+}
+// Panel headers
+.production.panel-primary > .panel-heading {
+  background-color: $production;
+  border-color: $production;
 }
