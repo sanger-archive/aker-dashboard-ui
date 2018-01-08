@@ -3,7 +3,9 @@
     <h2 class="panel-title">Work Orders</h2>
   </div>
   <div class="panel-body">
-    <p>A service to request work for named products offered by scientific operations.</p>
+    <p>Request work for named products offered by scientific operations. Work Orders can are created with a set of material and sub-project.</p>
+  </div>
+  <div class="panel-footer">
     <%= link_to 'View Work Orders', "#{Rails.application.config.work_orders_url}",
           class: 'btn btn-sm btn-default', style: 'margin-right: 10px' %>
     <%= link_to 'Create', "#{Rails.application.config.work_orders_url}/work_orders",
