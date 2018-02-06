@@ -24,7 +24,7 @@ RSpec.describe DashboardController, type: :controller do
 
     context 'when a JWT is included' do
       it 'renders the summary of applications' do
-        request.cookies[:aker_user_jwt] = jwt
+        request.cookies[:"aker_jwt_#{Rails.env}"] = jwt
         get :index
         expect(response).to render_template "dashboard/index"
       end
