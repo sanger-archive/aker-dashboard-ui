@@ -3,11 +3,13 @@
     <h2 class="panel-title">Permissions</h2>
   </div>
   <div class="panel-body">
-    <p>Create permission stamps to control who can use your samples in a work order. Assign deputies to stamp materials you own.</p>
+    <p>Assign deputies to share guardianship of your samples.</p>
   </div>
   <div class="panel-footer">
-    <%= link_to 'Stamps', "#{Rails.application.config.stamps_ui_url}",
+    <!--
+    <%= link_to 'Stamps', "#{Rails.application.config.stamps_ui_url}/stamps",
           class: 'btn btn-sm btn-default', style: 'margin-right: 10px' %>
+    -->
     <%= link_to 'Deputies', "#{Rails.application.config.stamps_ui_url}/deputies",
           class: 'btn btn-sm btn-default' %>
   </div>
