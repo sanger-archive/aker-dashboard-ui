@@ -36,7 +36,13 @@ gem 'jbuilder', '~> 2.5'
 # For those styles
 gem 'bootstrap-sass'
 
+gem 'lograge'
+gem 'logstash-event'
+gem 'logstash-logger'
+gem 'request_store'
+
 gem 'aker_credentials_gem', github: 'sanger/aker-credentials'
+gem 'aker_shared_navbar', github: 'sanger/aker-shared-navbar'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
