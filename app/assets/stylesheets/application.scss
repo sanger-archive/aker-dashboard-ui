@@ -24,10 +24,9 @@
   background-color: $production;
 }
 
-// WIP and UAT2 use 'background' instead of 'background-color' as they use a gradient
 .wip.panel-primary > .panel-heading {
-  background: $wip;
+  background: #EE0979;
 }
 .uat2.panel-primary > .panel-heading {
-  background: $uat2;
+  background-color: #C33764;
 }
