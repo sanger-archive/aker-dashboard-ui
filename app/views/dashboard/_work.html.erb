@@ -1,0 +1,14 @@
+<div class="panel panel-primary text-center <%= Rails.env %>">
+  <div class="panel-heading">
+    <h2 class="panel-title">Work Plans</h2>
+  </div>
+  <div class="panel-body">
+    <p>Request work for named products offered by Scientific Operations. Work plans are created with a set of material, sub-project, and data release strategy.</p>
+  </div>
+  <div class="panel-footer">
+    <%= link_to 'View Work Plans', "#{Rails.application.config.urls[:work]}",
+          class: 'btn btn-sm btn-default', style: 'margin-right: 10px' %>
+    <%= link_to 'Create', "#{Rails.application.config.urls[:work]}/work_plans",
+          class: 'btn btn-sm btn-success', method: 'post' %>
+  </div>
+</div>

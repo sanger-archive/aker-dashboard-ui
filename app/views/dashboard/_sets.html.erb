@@ -3,13 +3,13 @@
     <h2 class="panel-title">Sets</h2>
   </div>
   <div class="panel-body">
-    <p>Organise samples into sets, for ordering work, managing permissions, or simply groups
-    of materials that you wish to track.</p>
+    <p>Organise samples into sets, for ordering work, and tracking materials of interest.</p>
+    <br>
   </div>
   <div class="panel-footer">
-  <%= link_to 'Simple', "#{Rails.application.config.set_shaper_url}/simple",
+  <%= link_to 'Simple', "#{Rails.application.config.urls[:sets]}/simple",
         class: 'btn btn-sm btn-default', style: 'margin-right: 10px', target: '_blank' %>
-  <%= link_to 'Advanced', "#{Rails.application.config.set_shaper_url}/advanced",
+  <%= link_to 'Advanced', "#{Rails.application.config.urls[:sets]}/advanced",
         class: 'btn btn-sm btn-default', target: '_blank' %>
   </div>
 </div>
