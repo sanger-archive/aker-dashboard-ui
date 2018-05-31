@@ -40,11 +40,11 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  config.submission_url = '#submission'
-  config.set_shaper_url = '#set_shaper'
-  config.stamps_ui_url = '#stamps_ui'
-  config.study_management_url = '#study_management'
-  config.work_orders_url = '#work_orders'
+  config.urls = { reception: '',
+                  permissions: '',
+                  sets: '',
+                  projects: '',
+                  work: '' }
 
   config.jwt_secret_key = 'test'
 

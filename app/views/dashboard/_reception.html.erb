@@ -1,0 +1,14 @@
+<div class="panel panel-primary text-center <%= Rails.env %>">
+  <div class="panel-heading">
+    <h2 class="panel-title">Reception</h2>
+  </div>
+  <div class="panel-body">
+    <p>Create manifests of sample metadata, by uploading a CSV file or entering the data manually. Sample Management can dispatch and scan barcodes.</p>
+  </div>
+  <div class="panel-footer">
+    <%= link_to 'View Manifests', "#{Rails.application.config.urls[:reception]}",
+          class: 'btn btn-sm btn-default', style: 'margin-right: 10px' %>
+    <%= link_to 'Create', "#{Rails.application.config.urls[:reception]}/material_submissions/new",
+          class: 'btn btn-sm btn-success' %>
+  </div>
+</div>
