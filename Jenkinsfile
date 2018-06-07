@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                ls -lah
+                rvm 'bundle install'
             }
         }
         stage('Test') {
