@@ -24,6 +24,7 @@ gem 'sass-rails', '~> 5.0' # Use SCSS for stylesheets
 gem 'therubyracer', platforms: :ruby # See https://github.com/rails/execjs#readme
 gem 'turbolinks', '~> 5' # Read more: https://github.com/turbolinks/turbolinks
 gem 'uglifier', '>= 1.3.0' # Use Uglifier as compressor for JavaScript assets
+gem 'health_check'
 
 ###
 # Sanger gems
