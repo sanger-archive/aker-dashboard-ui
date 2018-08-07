@@ -14,19 +14,15 @@
 .development.panel-primary > .panel-heading {
   background-color: $development;
 }
-.dev.panel-primary > .panel-heading {
-  background-color: $dev;
-}
-.uat.panel-primary > .panel-heading {
-  background-color: $uat;
-}
-.production.panel-primary > .panel-heading {
-  background-color: $production;
-}
 
 .wip.panel-primary > .panel-heading {
   background: #EE0979;
 }
-.uat2.panel-primary > .panel-heading {
-  background-color: #C33764;
+
+.uat.panel-primary > .panel-heading {
+  background-color: $uat;
+}
+
+.prod.panel-primary > .panel-heading {
+  background: #373b44;
 }
