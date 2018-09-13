@@ -15,6 +15,10 @@
   background-color: $development;
 }
 
+.disp.panel-primary > .panel-heading {
+  background: $disp;
+}
+
 .wip.panel-primary > .panel-heading {
   background: #EE0979;
 }
